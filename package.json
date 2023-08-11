@@ -14,13 +14,10 @@
     "spell": "cspell lint .",
     "prepare": "husky install",
     "cypress": "cypress open --component",
-    "test": "npm run test:cypress",
-    "test:cypress": "cypress run --component",
-    "test:coverage": "npm run test",
-    "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary"
+    "test": "cypress run --component",
+    "check": "npm run lint:fix && npm run spell && npm run format && npm run build && npm run test"
   },
   "dependencies": {
-    "@fontsource/nunito-sans": "^5.0.5",
     "i18next": "^23.2.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,8 +29,6 @@
     "@commitlint/config-conventional": "^17.6.7",
     "@cspell/dict-es-es": "^2.2.6",
     "@cspell/dict-pt-br": "^2.2.0",
-    "@cypress/code-coverage": "^3.11.0",
-    "@cypress/instrument-cra": "^1.4.0",
     "@types/node": "^20.4.3",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
