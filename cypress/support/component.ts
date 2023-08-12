@@ -1,8 +1,7 @@
 import '@cypress/code-coverage/support';
 import { mount } from 'cypress/react18';
-import 'index.css';
-import 'lib/setup/fonts';
 import '../../src/@types/cypress.d.ts';
+import '../../src/index.css';
 import './commands';
 import './i18n';
 
