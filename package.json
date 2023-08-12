@@ -103,7 +103,8 @@
       "azure-pipelines.yml",
       "public",
       "charts",
-      "cypress/fixtures"
+      "cypress/fixtures",
+      "*-lock.*"
     ],
     "words": [
       "nginx",
